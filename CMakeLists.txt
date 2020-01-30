@@ -152,16 +152,15 @@ target_link_libraries(hedge_rcv_bin
 
 #####################
 
-add_executable(subscriber_test 
-src/subscriber_test.cpp
+add_executable(subscriber_rviz_beacons 
+src/subscriber_rviz_beacons.cpp
 )
 
-add_dependencies(subscriber_test marvelmind_nav_generate_messages_cpp)
+add_dependencies(subscriber_rviz_beacons marvelmind_nav_generate_messages_cpp)
 
-target_link_libraries(subscriber_test
+target_link_libraries(subscriber_rviz_beacons
  ${catkin_LIBRARIES}
 )
-
 
 #############
 ## Install ##
